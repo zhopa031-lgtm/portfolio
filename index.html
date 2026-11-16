@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Верстак — сайты, веб-приложения и автоматизация под ключ</title>
+<meta name="description" content="Верстак — независимая студия: сайты, лендинги, веб-приложения, Telegram-боты и интеграции. Три демо-проекта можно попробовать прямо на странице.">
+<meta property="og:title" content="Верстак — цифровые инструменты для бизнеса">
+<meta property="og:description" content="Сайты, веб-приложения, боты и автоматизация. Интерактивные демо проектов.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2C200'/%3E%3Cpath d='M6 8h6l4 12 4-12h6L19 26h-6z' fill='%2314212B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><a class="logo" href="#top">Верстак</a>
+<button class="burger" aria-expanded="false" aria-controls="nav">Меню</button>
+<nav id="nav"><a href="#services">Услуги</a><a href="#projects">Проекты</a><a href="#about">Обо мне</a><a href="#process">Процесс</a><a class="cta-s" href="#contact">Обсудить задачу</a></nav></header>
+
+<main id="top">
+<section class="hero">
+<div class="ruler" id="ruler" aria-hidden="true"><span id="rv">0 мм</span></div>
+<h1>Делаю цифровые инструменты, которые берут рутину на себя</h1>
+<div class="hero-side">
+<p>Верстак — независимая студия веб-разработки и автоматизации. Сайты, веб-приложения, Telegram-боты и связки между сервисами: от идеи до работающей версии.</p>
+<div class="btns"><a class="btn y" href="#projects">Смотреть проекты</a><a class="btn" href="#contact">Написать мне</a></div>
+<p class="note">Проекты ниже — концептуальные демо. Данные в них вымышленные.</p></div>
+</section>
+
+<section id="services" class="services"><h2>Что я делаю</h2>
+<ul class="spec">
+<li><b>Сайты</b><span>Корпоративные сайты и витрины на чистом HTML/CSS/JS или CMS. Быстрые, читаемые, индексируемые.</span><i>Скорость и SEO</i></li>
+<li><b>Лендинги</b><span>Одна страница — одна цель. Структура под заявку, аналитика целей, A/B-варианты заголовка.</span><i>Заявки</i></li>
+<li><b>Веб-приложения</b><span>Кабинеты, панели, калькуляторы, внутренние системы. От прототипа до рабочей версии.</span><i>Интерфейсы</i></li>
+<li><b>Автоматизация</b><span>Заявки, отчёты, напоминания, документы — без ручного переноса данных между таблицами.</span><i>Экономия времени</i></li>
+<li><b>Telegram-боты</b><span>Приём заявок, уведомления команде, каталоги, оплата, внутренние сервис-боты.</span><i>Мессенджер</i></li>
+<li><b>Интеграции по API</b><span>Связываю CRM, формы, платёжные системы, склад и таблицы в один поток данных.</span><i>Сервисы</i></li>
+</ul></section>
+
+<section id="projects" class="projects"><h2>Демо-проекты</h2>
+<p class="lead">Три концепта в разных стилях. Нажимайте, фильтруйте, переносите — всё работает в браузере. Это демонстрации, а не работы для реальных заказчиков.</p>
+
+<article class="proj fd" aria-labelledby="t1"><div class="meta"><h3 id="t1">Flowdesk</h3>
+<p>Приём заявок и записей для компании, которая обслуживает промышленное оборудование. Диспетчер видит все заявки на одной доске, клиент получает напоминание.</p>
+<p><b>Функции:</b> доска заявок, карточки клиентов, напоминания, уведомления в Telegram, статистика.</p>
+<p><b>Стек:</b> HTML, CSS, JS (демо); в боевой версии — Node.js, PostgreSQL, Telegram Bot API.</p></div>
+<div class="demo" id="fd"><div class="fd-bar"><span id="fd-stat"></span><button class="mini" id="fd-add">Новая заявка</button></div>
+<div class="board" id="fd-board"></div><div class="tg" id="fd-tg" aria-live="polite">Telegram-лог: пока пусто</div></div></article>
+
+<article class="proj tt" aria-labelledby="t2"><div class="meta"><h3 id="t2">TenderTrace</h3>
+<p>Мониторинг закупок для поставщиков промышленного оборудования. Система оценивает, насколько закупка подходит вашему профилю.</p>
+<p><b>Функции:</b> поиск, фильтры, оценка релевантности, карточка закупки, аналитика по отраслям.</p>
+<p><b>Стек:</b> HTML, CSS, JS (демо); в боевой версии — Python-парсеры, API площадок, Postgres.</p></div>
+<div class="demo" id="tt"><div class="tt-ctl"><input id="tt-q" type="search" placeholder="Поиск по названию или заказчику" aria-label="Поиск"><select id="tt-r" aria-label="Регион"><option value="">Все регионы</option></select><label>Релевантность от <output id="tt-o">50</output><input id="tt-m" type="range" min="0" max="95" step="5" value="50"></label></div>
+<div class="tt-grid"><table><thead><tr><th>Закупка</th><th>Сумма</th><th>Релев.</th></tr></thead><tbody id="tt-b"></tbody></table><aside id="tt-d" class="tt-d">Выберите закупку в списке</aside></div><div class="bars" id="tt-bars"></div></div></article>
+
+<article class="proj fp" aria-labelledby="t3"><div class="meta"><h3 id="t3">Frameport</h3>
+<p>Клиентский портал для фотографа: после съёмки клиент открывает свою галерею, отмечает любимые кадры и следит за ретушью.</p>
+<p><b>Функции:</b> галерея, избранное, статусы обработки, выдача материалов, история заказов.</p>
+<p><b>Стек:</b> HTML, CSS, JS (демо); в боевой версии — Next.js, объектное хранилище, подписанные ссылки.</p></div>
+<div class="demo" id="fp"><div class="fp-head"><span>Съёмка «Лофт, осень» · ретушь: <b id="fp-st">в работе</b></span><button class="mini" id="fp-next">Сменить статус</button></div>
+<div class="fp-g" id="fp-g"></div><div class="fp-foot"><span id="fp-c">Избранное: 0</span><button class="mini" id="fp-send">Подтвердить выбор</button></div><p id="fp-m" class="fp-m" aria-live="polite"></p></div></article>
+</section>
+
+<section id="about" class="about"><h2>Обо мне</h2>
+<div><p>Я независимый разработчик. Работаю один, поэтому вы общаетесь напрямую с тем, кто пишет код: без менеджеров-посредников и пересказов задачи.</p>
+<p>Мне интересны задачи, где программа убирает повторяющуюся работу: заявки, учёт, уведомления, отчёты. Сначала разбираюсь, как устроен ваш процесс, и только потом выбираю технологии.</p>
+<p>Пишу простой и поддерживаемый код, передаю исходники и описание, чтобы проект не зависел от меня.</p></div></section>
+
+<section id="process" class="process"><h2>Как проходит работа</h2>
+<ol><li><b>Знакомство</b>Вы описываете задачу, я задаю вопросы.</li><li><b>Анализ и план</b>Фиксируем объём, сроки и стоимость.</li><li><b>Дизайн</b>Прототип, который можно потрогать до разработки.</li><li><b>Разработка</b>Показываю промежуточные версии.</li><li><b>Тестирование</b>Проверка на устройствах и реальных сценариях.</li><li><b>Передача</b>Исходники, инструкция, помощь с запуском.</li></ol></section>
+
+<section id="contact" class="contact"><h2>Расскажите, что хотите автоматизировать</h2>
+<p class="lead">Опишите задачу в двух-трёх фразах — отвечу, как вижу решение.</p>
+<div class="cwrap"><form id="cf" novalidate>
+<label>Имя<input name="name" required autocomplete="name"></label>
+<label>Как с вами связаться<input name="contact" required placeholder="Почта или @telegram"></label>
+<label>Тип проекта<select name="type"><option>Сайт или лендинг</option><option>Веб-приложение</option><option>Автоматизация процессов</option><option>Telegram-бот</option><option>Интеграция сервисов</option><option>Пока не знаю</option></select></label>
+<label>Задача<textarea name="task" rows="4" required></textarea></label>
+<button class="btn y" type="submit">Подготовить письмо</button>
+<p id="cf-m" class="cf-m" aria-live="polite">Форма пока не подключена к серверу: кнопка откроет готовое письмо в вашей почте.</p></form>
+<div class="direct"><a href="https://t.me/your_username" rel="noopener">Написать в Telegram</a><a href="mailto:hello@example.com">hello@example.com</a></div></div></section>
+</main>
+<footer>Верстак · независимая студия веб-разработки</footer>
+<script src="js/app.js"></script>
+</body></html>
